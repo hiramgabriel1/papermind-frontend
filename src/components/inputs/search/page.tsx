@@ -1,11 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { GrMicrophone } from "react-icons/gr";
 
 export default function SearchComponente() {
   const [isTyping, setIsTyping] = useState(false);
+  
+  useEffect(() => {
+    setIsTyping(false);
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsTyping(e.target.value !== "");
@@ -24,8 +28,8 @@ export default function SearchComponente() {
   return (
     <div
       className={`relative flex items-center border ${
-        isTyping ? "border-[#585fe6]" : "border-gray-300"
-      } rounded-md px-2 py-2 bg-white space-x-2 overflow-hidden`}
+        isTyping ? "border-color_global" : "border-gray-300"
+      } rounded-md px-2 py-2 bg-background_secundary space-x-2 overflow-hidden`}
     >
       <input
         type="text"
@@ -45,7 +49,7 @@ export default function SearchComponente() {
 
       <button
         className={`flex-shrink-0 ${
-          isTyping ? "text-[#585fe6]" : "text-gray-400"
+          isTyping ? "text-color_global" : "text-gray-400"
         }  p-2 rounded-md focus:outline-none`}
         aria-label="Send"
       >

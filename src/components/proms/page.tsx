@@ -5,7 +5,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { interClass } from "@/fonts/inter";
 
 export default function PromsComponent() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const togglePrompts = () => {
     setIsOpen(!isOpen);
@@ -14,7 +14,7 @@ export default function PromsComponent() {
   return (
     <div className={`${interClass} mb-4`}>
       <div className="flex items-center p-2" onClick={togglePrompts}>
-        <div className="flex items-center gap-1 bg-[#fdf1f5] text-[#e8618c] p-2 rounded-md cursor-pointer">
+        <div className="flex items-center gap-1 bg-background_primary text-text_primary p-2 rounded-md cursor-pointer">
           <span className="flex items-center gap-2">
             {isOpen ? "Hide Prompts" : "Show Prompts"}
           </span>

@@ -6,7 +6,7 @@ export default function ChatIAComponent() {
       <div className="w-8 h-8 rounded-full overflow-hidden hidden sm:block">
         <img src={IA.src} alt="IA" className="w-full h-full" />
       </div>
-      <div className="border border-gray-300 bg-white text-black p-4 rounded-lg max-w-xl text-xs sm:text-sm">
+      <div className="border border-gray-300 bg-background_secundary text-black p-4 rounded-lg max-w-xl text-xs sm:text-sm">
         {" "}
         <p className="font-bold">
           The two main reasons why the weather does not stay the same are:

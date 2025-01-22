@@ -20,7 +20,7 @@ export default function RootLayout({
 
   return (
     <main className="h-screen flex overflow-hidden relative">
-      <div className="lg:hidden p-4 bg-white z-20">
+      <div className="lg:hidden p-4 bg-background_secundary z-20">
         <button onClick={toggleSidebar} className="text-black">
           <GiHamburgerMenu className="w-6 h-6" />
         </button>
@@ -34,7 +34,7 @@ export default function RootLayout({
       )}
 
       <aside
-        className={`bg-[#fdf1f5] p-6 flex flex-col justify-between transition-transform duration-300 ease-in-out lg:block fixed lg:static z-20 h-full lg:h-auto w-3/4 sm:w-1/2 lg:w-auto ${
+        className={`bg-background_primary shadow-lg p-6 flex flex-col justify-between transition-transform duration-300 ease-in-out lg:block fixed lg:static z-20 h-full lg:h-auto w-3/4 sm:w-1/2 lg:w-auto ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         }`}
       >
@@ -50,7 +50,7 @@ export default function RootLayout({
         </div>
       </aside>
 
-      <main className="flex-1 p-2 pr-8 bg-white overflow-auto">{children}</main>
+      <main className="flex-1 p-2 pr-8 bg-background_secundary overflow-auto">{children}</main>
     </main>
   );
 }

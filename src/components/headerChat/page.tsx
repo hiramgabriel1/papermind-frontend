@@ -5,7 +5,7 @@ import { IoTrashOutline } from "react-icons/io5";
 
 export default function HeaderChatComponent() {
   return (
-    <div className="sticky top-0 bg-white z-10 flex justify-between items-center border-b p-4">
+    <div className="sticky top-0 bg-background_secundary z-10 flex justify-between items-center border-b p-4">
       <div className="text-sm sm:text-2xl font-semibold text-black flex items-center gap-2">
         Weather Dynamics
         <GoPencil size={18} className="text-gray-700 cursor-pointer" />

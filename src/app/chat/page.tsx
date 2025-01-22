@@ -33,14 +33,14 @@ export default function Chat() {
         </div>
       </div>
 
-      <div className="sticky bottom-0 bg-white z-10  p-4">
+      <div className="sticky bottom-0 bg-background_secundary z-10  p-4">
         <PromsComponent />
         <GenerateComponent />
         <SearchComponente />
-        <p className="mt-2 text-center text-[#9da1aa] text-xs sm:text-sm hidden sm:block">
+        <p className="mt-2 text-center text-text_tercary text-xs sm:text-sm hidden sm:block">
           StormBot may produce inaccurate information about people, places, or
           facts.{" "}
-          <a href="#" className="text-[#636ae8] hover:underline">
+          <a href="#" className="text-text_secundary hover:underline">
             Privacy Notice
           </a>
         </p>
