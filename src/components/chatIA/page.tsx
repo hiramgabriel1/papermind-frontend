@@ -13,7 +13,7 @@ export default function ChatIAComponent() {
         </p>
         <br />
         <p>
-          <strong>Atmospheric Dynamics:</strong> The Earth's atmosphere is
+          <strong>Atmospheric Dynamics:</strong> The Earths atmosphere is
           constantly in motion due to various factors like air circulation,
           pressure systems, and the interaction of different air masses. These
           dynamic processes lead to continuous changes in weather patterns as

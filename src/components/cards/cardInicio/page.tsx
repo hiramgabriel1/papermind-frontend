@@ -13,7 +13,7 @@ export default function CardInicioComponent() {
           <RiQuestionMark className="text-text_secundary w-6 h-6 transition-colors duration-300 group-hover:text-[#fff]" />
         </span>
         <p className="font-medium text-black text-sm sm:text-base pointer-events-none">
-          "Industrial Revolution's impact on geopolitics."
+          Industrial Revolutions impact on geopolitics.
         </p>
       </div>
       <div className="p-1 cursor-pointer border rounded-md flex items-center gap-2 hover:border-text_primary transition-all duration-300 group transform hover:scale-105">
@@ -21,7 +21,7 @@ export default function CardInicioComponent() {
           <SlPencil className="text-text_secundary w-6 h-6 transition-colors duration-300 group-hover:text-[#fff]" />
         </span>
         <p className="font-medium text-black text-sm sm:text-base pointer-events-none">
-          "Create an HD wallpaper cat licking paw images."
+          Create an HD wallpaper cat licking paw images.
         </p>
       </div>
 
@@ -30,7 +30,7 @@ export default function CardInicioComponent() {
           <IoCodeSlashOutline className="text-text_secundary w-6 h-6 transition-colors duration-300 group-hover:text-[#fff]" />
         </span>
         <p className="font-medium text-black text-sm sm:text-base pointer-events-none">
-          "HTTP request in JavaScript?"
+          HTTP request in JavaScript?
         </p>
       </div>
 
@@ -39,7 +39,7 @@ export default function CardInicioComponent() {
           <CiLocationOn className="text-text_secundary w-6 h-6 transition-colors duration-300 group-hover:text-[#fff]" />
         </span>
         <p className="font-medium text-black pointer-events-none">
-          "Tell me about the history of the Eiffel Tower."
+          Tell me about the history of the Eiffel Tower.
         </p>
       </div>
 
@@ -48,7 +48,7 @@ export default function CardInicioComponent() {
           <FaRegLightbulb className="text-text_secundary w-6 h-6 transition-colors duration-300 group-hover:text-[#fff]" />
         </span>
         <p className="font-medium text-black pointer-events-none">
-          "Write a short poem about the beauty of nature."
+          Write a short poem about the beauty of nature.
         </p>
       </div>
     </div>
