@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from "react";
@@ -6,11 +7,28 @@ import UserComponent from "@/components/user/page";
 import NavComponent from "@/components/nav/page";
 import AddChatComponent from "@/components/buttons/addchat/page";
 import HeaderComponent from "@/components/buttons/header/page";
+import logo from "../../assets/logo.png";
+import perfil from "../../assets/perfil.png";
+import { FaPlus } from "react-icons/fa";
+import { FiMessageCircle } from "react-icons/fi";
+import { FaRegLightbulb } from "react-icons/fa";
+import { TbMovie } from "react-icons/tb";
+import { MdOutlinePhotoSizeSelectActual } from "react-icons/md";
+import { PiCat } from "react-icons/pi";
+import { IoEarthOutline } from "react-icons/io5";
+import { BiSearchAlt } from "react-icons/bi";
+import { GoKebabHorizontal } from "react-icons/go";
+import Image from "next/image";
+
+export const metadata = {
+	title: "Papermind - Inicio",
+	description: "Ask everything you want!",
+};
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

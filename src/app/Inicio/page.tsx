@@ -10,7 +10,6 @@ import SearchComponente from "@/components/inputs/search/page";
 
 export default function InicioPage() {
   return (
-    <>
       <div className="min-h-screen flex flex-col justify-between max-w-4xl mx-auto sm:px-8">
         <TitleInicioComponent />
         <CardInicioComponent />
@@ -45,6 +44,5 @@ export default function InicioPage() {
           </p>
         </div>
       </div>
-    </>
   );
 }
