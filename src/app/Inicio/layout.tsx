@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import UserComponent from "@/components/user/page";
 import NavComponent from "@/components/nav/page";
-import AddChatComponent from "@/components/buttons/addchat/page";
+import { FaPlus } from "react-icons/fa";
+import { interClass } from "@/fonts/inter";
 import HeaderComponent from "@/components/buttons/header/page";
-
+import ModalUI from "@/components/modals/newChat";
 /**
  *
  * this page is the layout of the page, it contains the sidebar and the content
@@ -20,6 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const toggleSidebar = () => {
 		setIsSidebarOpen(!isSidebarOpen);
@@ -49,16 +51,23 @@ export default function RootLayout({
 					<HeaderComponent />
 
 					<div className="flex-grow flex flex-col mt-5 justify-between">
-						<AddChatComponent />
+						<button
+							className={`${interClass}mt-6 w-full bg-black border-none text-white py-2 rounded-md flex justify-center items-center gap-2 hover:bg-text_primary hover:border-none transition-all duration-300 transform hover:scale-105`}
+							onClick={() => {
+								setIsModalOpen(true);
+							}}
+						>
+							<FaPlus className="h-4 w-4" />
+							Nuevo
+						</button>
 						<NavComponent />
 					</div>
-
 					<UserComponent />
 				</div>
 			</aside>
-
 			<main className="flex-1 p-2 pr-8 bg-background_secundary overflow-auto">
 				{children}
+				{isModalOpen && <ModalUI />}
 			</main>
 		</main>
 	);

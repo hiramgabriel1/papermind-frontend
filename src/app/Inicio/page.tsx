@@ -4,14 +4,18 @@ import { RiQuestionMark } from "react-icons/ri";
 import { SlPencil } from "react-icons/sl";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import logo from "../../assets/logo.png";
-import TitleInicioComponent from "@/components/title/titleInicio/page";
 import CardInicioComponent from "@/components/cards/cardInicio/page";
 import SearchComponente from "@/components/inputs/search/page";
+import { interClass } from "@/fonts/inter";
 
 export default function InicioPage() {
 	return (
 		<div className="min-h-screen flex flex-col justify-between max-w-4xl mx-auto sm:px-8">
-			<TitleInicioComponent />
+			<div className={`${interClass}`}>
+				<h1 className="text-3xl sm:text-5xl font-[700] text-black mt-10 text-center">
+					Pregunta lo que quieras!
+				</h1>
+			</div>
 			<CardInicioComponent />
 			<div className="sm:hidden text-center opacity-30">
 				<img src={logo.src} alt="Logo" className="mx-auto block" />
